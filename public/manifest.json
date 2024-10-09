@@ -1,6 +1,0 @@
-{
-  "short_name": "Q-Learning Gridworld Example",
-  "name": "Q-Learning Gridworld Example",
-  "start_url": ".",
-  "display": "standalone"
-}

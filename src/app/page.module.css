@@ -1,0 +1,15 @@
+.appContainer {
+  text-align: center;
+}
+
+.displayTable {
+  border: 1px solid black;
+}
+
+.displayTable td {
+  border: 1px solid black;
+}
+
+/* .episodeStepControlsContainer button {
+  margin: 1rem;
+} */
