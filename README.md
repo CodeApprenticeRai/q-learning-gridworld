@@ -47,7 +47,7 @@ Confirmation:
 1. A component for setting parameters pre-experiment (define Experment object).
 2. Improved Experimentation / Algorithm Design Optimization.
 3. Multiple success and fail states.
-4. If the currentState is terminal, the next step forward resets the episode. 
+4. [Completed] If the currentState is terminal, the next step forward resets the episode. 
 5. Heatmap/Value Density Info.
 6. Add a Last Action Row to the AppStateSummary
 7. Mean Q of each cell in table.

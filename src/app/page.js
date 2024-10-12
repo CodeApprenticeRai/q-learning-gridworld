@@ -197,7 +197,7 @@ function App() {
   return (
     <div className={styles.appContainer}>
       <h1>Q-Learning Gridworld Example</h1>
-      <Table Q={Q} currentState={currentState} />
+      <Table Q={Q} currentState={currentState} actions={actions} />
       <EpisodeStepControls
         stepEpisodeBackward={stepEpisodeBackward} 
         stepEpisodeForward={stepEpisodeForward} 
@@ -213,7 +213,7 @@ function App() {
 
 
 function Table({
-  Q, currentState
+  Q, currentState, actions
 }) {
   // let displayRows = [];
   
@@ -238,7 +238,11 @@ function Table({
             <td key={j} style={
                 ((i===currentState.x) && (j===currentState.y)) ? {border: "4px solid black"} : {}
               }>
-              {col.join("\n")}
+              {
+                col.map((_q, action_i) => {
+                  return `${actions[action_i]["displayString"]}: ${_q}${action_i !== 3 ? ",": ""}\n`;
+                })
+              }
             </td>
           )
         )}
